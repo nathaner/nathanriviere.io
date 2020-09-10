@@ -1,6 +1,6 @@
-<ul reversed="reversed" class="postlist">
+<dl reversed="reversed" class="postlist">
     {% for project in projectsList | reverse %}
-        <li class="projects-list-item{% if project.url == url %} projects-list-item-active{% endif %}">
+        <dt class="projects-list-item{% if project.url == url %} projects-list-item-active{% endif %}">
             <a href="{{ project.url | url }}" class="postlist-link">
                 {% if project.data.title %}{{ project.data.title }}
                 {% else %}
@@ -14,6 +14,9 @@
                     <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
                 {%- endif -%}
             {% endfor %}
-        </li>
+        </dt>
+        <dd>
+            {{ project.data.description }}
+        </dd>
     {% endfor %}
-</ul>
+</dl>
