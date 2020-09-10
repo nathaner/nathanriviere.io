@@ -1,0 +1,19 @@
+<ul reversed="reversed" class="postlist">
+    {% for project in projectsList | reverse %}
+        <li class="projects-list-item{% if project.url == url %} projects-list-item-active{% endif %}">
+            <a href="{{ project.url | url }}" class="postlist-link">
+                {% if project.data.title %}{{ project.data.title }}
+                {% else %}
+                    <code>{{ project.url }}</code>
+                {% endif %}
+            </a>
+            <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ project.date | readableDate }}</time>
+            {% for tag in project.data.tags %}
+                {%- if collections.tagList.indexOf(tag) != -1 -%}
+                    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                    <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+                {%- endif -%}
+            {% endfor %}
+        </li>
+    {% endfor %}
+</ul>

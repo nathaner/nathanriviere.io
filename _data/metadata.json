@@ -1,7 +1,7 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "nathanriviere.io",
+  "url": "https://nathanriviere.io/",
+  "description": "QA Engineer and web development enthusiast.",
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "filename": "feed.xml",
@@ -13,8 +13,8 @@
     "url": "https://example.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "Nathan Riviere",
+    "email": "n.e.riviere@gmail.com",
+    "url": "https://nathanriviere.io/about-me/"
   }
 }
