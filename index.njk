@@ -18,14 +18,14 @@ eleventyNavigation:
 {% set projectsListCounter = collections.projects | length %}
 {% include "projectsList.njk" %}
 
-<h2>Latest 3 Posts</h2>
+{# <h2>Latest 3 Posts</h2> #}
 
-{% set postslist = collections.posts | head(-3) %}
+{# {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+{% include "postslist.njk" %} #}
 
-<p>More posts can be found in
-    <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+{# <p>More posts can be found in
+    <a href="{{ '/posts/' | url }}">the archive</a>.</p> #}
 
 <h2>About me</h2>
 
@@ -45,3 +45,15 @@ eleventyNavigation:
 <p>
     I've developed a backend and a frontend internal website to track the time spent on clients' projects. I used Bootstrap, jQuery, PHP and SQL to do so.
 </p>
+
+<h2>Reach out!</h2>
+
+<p>I'm currently looking for a job, as a QA Engineer or as a developer. Feel free to contact me!</p>
+
+<div class="contact">
+    <a href="https://github.com/nathaner" target="_blank" rel="noopener noreferrer"><img src=" img/github.png" alt="Github"></a>
+    <a href="https://www.linkedin.com/in/nathanriviere/" target="_blank" rel="noopener noreferrer">
+        <img src="img/linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="mailto:n.e.riviere@gmail.com"><img src="img/mail.png" alt="Mail"></a>
+</div>

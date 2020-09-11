@@ -43,9 +43,6 @@ main {
 main :first-child {
   margin-top: 0;
 }
-header {
-  border-bottom: 1px dashed var(--lightgray);
-}
 header:after {
   content: "";
   display: table;
@@ -249,17 +246,29 @@ header img {
   max-width: 175px;
   border-radius: 50%;
 }
+
+.contact {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact img {
+  width: 3em;
+}
+
 footer {
   display: flex;
   height: 100px;
   width: 100%;
   margin-top: 2em;
-  background: rgb(32, 32, 32);
-  color: white;
+  background: rgb(224, 224, 224);
+  color: black;
 }
 
 footer a {
-  color: white;
+  color: black;
   text-decoration: underline;
 }
 
