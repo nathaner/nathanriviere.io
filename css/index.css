@@ -7,6 +7,7 @@
   --navy: #17050f;
   --blue: #082840;
   --white: #fff;
+  font-size: 16px;
 }
 * {
   box-sizing: border-box;
@@ -240,6 +241,27 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(+100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+header h1::after {
+  animation: 0.5s ease-out 0s 1 slideInFromRight;
+  float: right;
+  content: "";
+  display: block;
+  width: 80%;
+  height: 6px;
+  background: rgb(15, 170, 204);
+  margin-top: 0.7rem;
 }
 
 header img {

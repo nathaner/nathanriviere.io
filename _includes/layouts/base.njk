@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ title or metadata.title }}</title>
+        <script src="https://kit.fontawesome.com/e297f69eba.js" crossorigin="anonymous"></script>
+
         <meta name="description" content="{{ description or metadata.description }}">
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
@@ -42,7 +44,7 @@
                         11ty
                     </a>
                 </li>
-                <li>
+                {# <li>
                     <a href="https://github.com/nathaner" target="_blank" rel="noopener noreferrer">
                         Github
                     </a>
@@ -51,7 +53,7 @@
                     <a href="https://www.linkedin.com/in/nathanriviere/" target="_blank" rel="noopener noreferrer">
                         LinkedIn
                     </a>
-                </li>
+                </li> #}
             </ul>
         </footer>
 
