@@ -1,6 +1,6 @@
 ---
 title: makornik.com
-description: A showcase website for a DJ based in Paris with a simple contact form.
+description: This is a basic website for a friend who needed to have a personal website with a dynamic form. I used PHP and Ajax to achieve this very short project.
 date: 2020-09-10
 tags:
   - php

@@ -8,13 +8,13 @@
                     <code>{{ project.url }}</code>
                 {% endif %}
             </a>
-            <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ project.date | readableDate }}</time>
-            {% for tag in project.data.tags %}
+            {# <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ project.date | readableDate }}</time> #}
+            {# {% for tag in project.data.tags %}
                 {%- if collections.tagList.indexOf(tag) != -1 -%}
                     {% set tagUrl %}/tags/{{ tag }}/{% endset %}
                     <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
                 {%- endif -%}
-            {% endfor %}
+            {% endfor %} #}
         </dt>
         <dd>
             {{ project.data.description }}
